@@ -4,11 +4,11 @@ Clone repo dan masuk ke folder.
 
 npm install
 
-Salin .env.example ke .env dan sesuaikan.
+untuk env file sesuaikan dengan koneksi masing" dan jwt secretnya
 
-Jalankan server: node server.js
+Jalankan server: node --env-file=.env --watch server.js
 
-Jalankan test: masuk ke folder test, lalu jalankan node --env-file=.env --test <'nama file' >
+Jalankan test: masuk ke folder test, lalu jalankan node --env-file=.env --test <'nama file' > bisa juga dilakukan melaui postman atau extensi http dari vs code , dan untuk contoh sudah saya sediakan 
 
 Desain Penting
 
@@ -21,3 +21,12 @@ Admin Role: field role di user schema, hanya admin dapat akses /api/admin/listin
 Refresh Token + Revoke
 
 Refresh token disimpan di DB per user.
+
+
+alur user :
+register jika belum melakukan login,
+setelah register , silahkan login dengan menggunakan email dan password kemudian nanti diberikan token JWT,
+untuk mendapatkan user sendiri ambil token dari respon setelah login lalu auhtorizasi di header
+
+alur admin :
+sudah ada di test/admin.test.js
