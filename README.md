@@ -8,7 +8,7 @@ untuk env file sesuaikan dengan koneksi masing" dan jwt secretnya
 
 Jalankan server: node --env-file=.env --watch server.js
 
-Jalankan test: masuk ke folder test, lalu jalankan node --env-file=.env --test <'nama file' > bisa juga dilakukan melaui postman atau extensi http dari vs code , dan untuk contoh sudah saya sediakan 
+Jalankan test: masuk ke folder test, lalu jalankan node --env-file=.env --test <'nama file' > bisa juga dilakukan melaui postman atau extensi http dari vs code jikalau sudah menjalankan servernya (node --env-file=.env --watch server.js), dan untuk contoh sudah saya sediakan di file .http
 
 Desain Penting
 
