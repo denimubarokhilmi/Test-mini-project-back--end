@@ -19,9 +19,7 @@ Rate Limiter: login max 5 kali/5 menit per IP, status 429 jika terlampaui.
 
 Admin Role: field role di user schema, hanya admin dapat akses /api/admin/listing-user.
 
-Refresh Token + Revoke
-
-Refresh token disimpan di DB per user.
+token disimpan di DB per user.
 
 
 alur user :
