@@ -1,0 +1,27 @@
+POST http://localhost:3000/api/admin/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email": "admin@example.com",
+    "password": "admin",
+    "role":"admin"
+}
+
+###
+
+GET  http://localhost:3000/api/user/me
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlbmlAZ21haWwuY29tIiwidXNlcm5hbWUiOiJtaXNhbCIsImlhdCI6MTc1ODk1MDk5MCwiZXhwIjoxNzU4OTU4MTkwfQ.0yvGU9gH8QUSKVMUjNYAZ3Zv_UdtVhjf8I1PJ4l34fU
+
+###
+GET  http://localhost:3000/api/user/me
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlbmlhZ2dzQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoiZGVuaSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4OTUxMTAzLCJleHAiOjE3NTg5NTgzMDN9.qfHcVzrGeUzKV3VSFgLfpZA_bDvzqFSyqoNNbyTDrAc
+
+
+###
+
+GET  http://localhost:3000/api/admin/listing-user
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwidXNlcm5hbWUiOiJhZG1pbiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1ODk1MTQxNSwiZXhwIjoxNzU4OTU4NjE1fQ.ebRL221_wNmgVoRxd8IIstQYSCuPNRs7vGSElF5BvkI
