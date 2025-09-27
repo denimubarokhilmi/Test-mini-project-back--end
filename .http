@@ -1,3 +1,22 @@
+POST http://localhost:3000/api/user/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email": "deni@gmail.com",
+    "password": "1233"
+}
+### setelah login akan mendapatkan token jwt lalu dapatkan user ke enpoint http://localhost:3000/api/user/me
+###
+
+GET  http://localhost:3000/api/user/me
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlbmlAZ21haWwuY29tIiwidXNlcm5hbWUiOiJtaXNhbCIsImlhdCI6MTc1ODk1MDk5MCwiZXhwIjoxNzU4OTU4MTkwfQ.0yvGU9gH8QUSKVMUjNYAZ3Zv_UdtVhjf8I1PJ4l34fU
+
+
+
+### alur Admin 
+
 POST http://localhost:3000/api/admin/login
 Content-Type: application/json
 Accept: application/json
@@ -7,19 +26,7 @@ Accept: application/json
     "password": "admin",
     "role":"admin"
 }
-
-###
-
-GET  http://localhost:3000/api/user/me
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlbmlAZ21haWwuY29tIiwidXNlcm5hbWUiOiJtaXNhbCIsImlhdCI6MTc1ODk1MDk5MCwiZXhwIjoxNzU4OTU4MTkwfQ.0yvGU9gH8QUSKVMUjNYAZ3Zv_UdtVhjf8I1PJ4l34fU
-
-###
-GET  http://localhost:3000/api/user/me
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlbmlhZ2dzQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoiZGVuaSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4OTUxMTAzLCJleHAiOjE3NTg5NTgzMDN9.qfHcVzrGeUzKV3VSFgLfpZA_bDvzqFSyqoNNbyTDrAc
-
-
+### dapatkan token jwt lalu dapatkan semua user ke endpoint http://localhost:3000/api/admin/listing-user
 ###
 
 GET  http://localhost:3000/api/admin/listing-user
