@@ -11,6 +11,7 @@ Jalankan server: node --env-file=.env --watch server.js
 Jalankan test: masuk ke folder test, lalu jalankan node --env-file=.env --test <'nama file' > bisa juga dilakukan melaui postman atau extensi http dari vs code jikalau sudah menjalankan servernya (node --env-file=.env --watch server.js), dan untuk contoh sudah saya sediakan di file .http
 
 Desain Penting
+file env : pada saat ingin menjalankan unit test dan masuk ke folder test itu , perhatikan tata letak env filenya jikalau file env nya diluar folder test maka jalankan (node --env-file=../.env --test <'nama file' > ), tapi jika berada di dalam folder test cukup jalankan (node --env-file=.env --test <'nama file' > )
 
 JWT: akses token 2 jam, refresh token optional (lihat di bawah).
 
