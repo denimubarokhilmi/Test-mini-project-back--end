@@ -12,6 +12,7 @@ Jalankan test: masuk ke folder test, lalu jalankan node --env-file=.env --test <
 
 Desain Penting:
 
+Joi : menggunakan library Joi untuk validasi input
 
 file env : pada saat ingin menjalankan unit test dan masuk ke folder test itu , perhatikan tata letak env filenya jikalau file env nya diluar folder test maka jalankan (node --env-file=../.env --test <'nama file' > ), tapi jika berada di dalam folder test cukup jalankan (node --env-file=.env --test <'nama file' > )
 
